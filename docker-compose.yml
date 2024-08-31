@@ -1,11 +1,11 @@
 services:
   db:
     image: postgres
-    container_name: inmobiliaria_plata_db
+    container_name: gestion_biblioteca
     restart: always
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: inmobiliaria_plata_db
+      POSTGRES_DB: gestion_biblioteca
     env_file:
       - "dev.env"
