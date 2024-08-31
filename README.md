@@ -28,3 +28,9 @@
 - **Columns:**
   - `statu_id`
   - `statu_name`
+
+## Instalar dependencias:
+
+```bash
+pip install -r requirements.txt
+```
