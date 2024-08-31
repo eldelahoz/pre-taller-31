@@ -5,38 +5,26 @@
 
 #### 1. **Books Table**
 - **Columns:**
-  - `book_id` (Primary Key, INT, AUTO_INCREMENT)
-  - `title` (VARCHAR(255), NOT NULL)
-  - `author_id` (Foreign Key, INT, NOT NULL)
-  - `publication_date` (DATE)
-  - `genre_id` (Foreign Key, INT)
-  - `status` (ENUM('available', 'borrowed'), NOT NULL)
+  - `book_id` 
+  - `title`
+  - `author_id`
+  - `publication_date` 
+  - `genre_id`
+  - `status` 
   
 #### 2. **Authors Table**
 - **Columns:**
-  - `author_id` (Primary Key, INT, AUTO_INCREMENT)
-  - `first_name` (VARCHAR(100), NOT NULL)
-  - `last_name` (VARCHAR(100), NOT NULL)
-  - `date_of_birth` (DATE)
+  - `author_id` 
+  - `first_name`
+  - `last_name`
+  - `date_of_birth`
   
 #### 3. **Genres Table**
 - **Columns:**
-  - `genre_id` (Primary Key, INT, AUTO_INCREMENT)
-  - `genre_name` (VARCHAR(100), NOT NULL)
+  - `genre_id`
+  - `genre_name`
 
-#### 4. **Borrowers Table**
+#### 4. **Status Table**
 - **Columns:**
-  - `borrower_id` (Primary Key, INT, AUTO_INCREMENT)
-  - `first_name` (VARCHAR(100), NOT NULL)
-  - `last_name` (VARCHAR(100), NOT NULL)
-  - `email` (VARCHAR(255), UNIQUE)
-  - `phone_number` (VARCHAR(15))
-
-#### 5. **BorrowingRecords Table**
-- **Purpose:** To track which borrowers have borrowed which books and when.
-- **Columns:**
-  - `record_id` (Primary Key, INT, AUTO_INCREMENT)
-  - `book_id` (Foreign Key, INT, NOT NULL)
-  - `borrower_id` (Foreign Key, INT, NOT NULL)
-  - `borrow_date` (DATETIME, NOT NULL)
-  - `return_date` (DATETIME)
+  - `statu_id`
+  - `statu_name`
